@@ -47,9 +47,9 @@ Developer @GA in NYC
 
 body {
      color: #000;
-     font-size: 12px;
+     font-size: 13px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
       background-size: cover;
 }
@@ -66,9 +66,19 @@ body {
   height: 500px;
 
 }
-
+#quote {
+  background-image: url("img/testimonial_bg.jpg");
+  text-align: center;
+  height: auto;
+}
+#benefits {
+  background-color: #fff;
+  height: 300px;
+}
 header {
-
+  background-image: url ("img/header_bg.jpg");
+  text-align: center;
+  height: auto;
 }
 
 footer {
@@ -78,7 +88,23 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-align: left;
+  margin: 40px 0px 40px 60px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
 
+}
+h3 {
+  font: 20px Semibold;
+}
 
-
-
+button {
+  border-radius: 5px;
+}
