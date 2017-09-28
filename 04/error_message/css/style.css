@@ -3,7 +3,7 @@ body {
 }
 #notification {
 	background-color: #eee;
-	border: px solid #CCC;
+	border: 1px solid #CCC;
 	padding: 10px;
 }
 .message {
@@ -26,4 +26,10 @@ code {
 	padding: 1px 4px 1px 4px;
 	border: 1px solid #CCC;
 	border-radius: #c66;
+}
+.message.error {
+	background-color: red;
+}
+#notification .error {
+	background-color: blue;
 }

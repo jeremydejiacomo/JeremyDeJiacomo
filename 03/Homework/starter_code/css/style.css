@@ -50,7 +50,7 @@ body {
      font-size: 13px;
      font-weight: 300;
      line-height: 1.4;
-     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
       background-size: cover;
 }
@@ -67,6 +67,7 @@ body {
 }
 #quote {
   background-image: url("images/testimonial_bg.jpg");
+
   text-align: center;
   height: auto;
 }
@@ -74,6 +75,10 @@ body {
   background-color: #fff;
   padding: 40px 0px 40px 40px;
   height: auto;
+}
+.foot_logo {
+  color: #f9e42e;
+  text-align: center;
 }
 header {
   background-image: url ("images/header_bg.jpg");
@@ -108,10 +113,7 @@ button {
   content: 100%;
   align-content: auto;
 }
-.foot_logo {
-  color: #f9e42e;
-  text-align: center;
-}
+
 div {
     display: inline-block;
     max-width: 100%;
