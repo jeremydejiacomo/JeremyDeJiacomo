@@ -48,6 +48,7 @@ Developer @GA in NYC
 body {
      color: #000;
      font-size: 13px;
+     font-weight: 300;
      line-height: 1.4;
      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
@@ -63,26 +64,25 @@ body {
 #container {
   width: 100%;
   margin: auto;
-  height: 500px;
-
 }
 #quote {
-  background-image: url("img/testimonial_bg.jpg");
+  background-image: url("images/testimonial_bg.jpg");
   text-align: center;
   height: auto;
 }
 #benefits {
   background-color: #fff;
-  height: 300px;
+  padding: 40px 0px 40px 40px;
+  height: auto;
 }
 header {
-  background-image: url ("img/header_bg.jpg");
+  background-image: url ("images/header_bg.jpg");
   text-align: center;
   height: auto;
 }
 
 footer {
-
+  text-align: auto;
 }
 
 /******************************************
@@ -99,12 +99,20 @@ h1{
 h2 {
   font-size: 24px;
   font-weight: 600;
-
 }
 h3 {
   font: 20px Semibold;
 }
-
 button {
   border-radius: 5px;
+  content: 100%;
+  align-content: auto;
+}
+.foot_logo {
+  color: #f9e42e;
+  text-align: center;
+}
+div {
+    display: inline-block;
+    max-width: 100%;
 }
