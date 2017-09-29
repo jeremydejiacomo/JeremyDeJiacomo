@@ -1,0 +1,22 @@
+#threeColumn header, #threeColumn footer, #threeColumn aside, #threeColumn section {
+	background-color: blue;
+	min-height: 100px;
+	/* border: 1px solid black; */
+}
+#threeColumn header {
+	margin-bottom: 5px;
+}
+#threeColumn footer {
+	margin-top: 5px;
+}
+#threeColumn .flexbox {
+	display: flex;
+}
+#threeColumn section {
+	width: 60%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+#threeColumn aside {
+	width: 20%;
+}

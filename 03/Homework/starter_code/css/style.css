@@ -46,7 +46,7 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
+     color: #606161;
      font-size: 13px;
      font-weight: 300;
      line-height: 1.4;
@@ -66,8 +66,10 @@ body {
   margin: auto;
 }
 #quote {
-  background-image: url("images/testimonial_bg.jpg");
-
+  background-image: url ("images/testimonial_bg.jpg");
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
   text-align: center;
   height: auto;
 }
@@ -88,6 +90,10 @@ header {
 
 footer {
   text-align: auto;
+  font-size: 9px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #121212;
 }
 
 /******************************************
@@ -104,17 +110,38 @@ h1{
 h2 {
   font-size: 24px;
   font-weight: 600;
+  color: #fff;
 }
 h3 {
-  font: 20px Semibold;
+  font-size: 20px;
+  font-weight: 600;
+  color: #121212;
 }
 button {
+  font-size: 14px;
+  font-weight: 800;
   border-radius: 5px;
+  border-style: none;
+  background-color: #f9e42e;
   content: 100%;
   align-content: auto;
+  padding: 10px 30px 10px 30px;
+  margin: 40px 0px 100px 0px;
 }
-
+.signup {
+  font-size: 12px;
+  margin: 20px 0px;
+  background-color: #f9e42e;
+}
+.button2 {
+    background-color: #033048;
+    color: #fff;
+}
 div {
-    display: inline-block;
+    display: block;
     max-width: 100%;
 }
+.author {
+  font-weight: 600;
+}
+
