@@ -1,3 +1,4 @@
+/* three column layout */
 #threeColumn header, #threeColumn footer, #threeColumn aside, #threeColumn section {
 	background-color: blue;
 	min-height: 100px;
@@ -19,4 +20,122 @@
 }
 #threeColumn aside {
 	width: 20%;
+}
+
+/* simple marketing layout */
+
+#simpleMarketing header, #simpleMarketing footer, #simpleMarketing aside, #simpleMarketing section {
+	background-color: DeepSkyBlue;
+	min-height: 100px;
+}
+#simpleMarketing header {
+	margin-bottom: 5px;
+}
+#simpleMarketing footer {
+	margin-top: 5px;
+}
+#simpleMarketing .halfhalf {
+	column-count: 2;
+	column-width: auto;
+	column-gap: 2%;
+}
+#simpleMarketing .columns {
+	column-count: 3;
+	column-width: auto;
+	column-gap: 2%;
+}
+div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* marketing with nav layout */
+
+#NavMarketing header, #NavMarketing footer, #NavMarketing aside, #NavMarketing section {
+	background-color: DeepPink;
+	min-height: 100px;
+}
+#NavMarketing header {
+	margin-bottom: 5px;
+	background-color: white;
+	text-align: center;
+}
+#NavMarketing footer {
+	margin-top: 5px;
+}
+#NavMarketing .flexbox {
+	display: flex;
+}
+#NavMarketing .full {
+	width: 100%;
+}
+#NavMarketing .columns {
+	column-count: 3;
+	column-width: auto;
+	column-gap: 2%;
+}
+#NavMarketing .logo {
+	width: 20%;
+	margin-right: 10%;
+	background-color: DeepPink;
+}
+#NavMarketing .nav {
+	width: 70%;
+	column-count: 4;
+	column-gap: 1%;
+	column-width: auto;
+}
+
+/* magazine layout */
+
+#magazine header, #magazine footer, #magazine aside, #magazine section {
+	background-color: YellowGreen;
+	min-height: 100px;
+	text-align: center;
+}
+#magazine header {
+	margin-bottom: 5px;
+	background-color: white;
+}
+#magazine footer {
+	margin-top: 5px;
+}
+#magazine .flexbox {
+	display: flex;
+}
+#magazine .full {
+	width: 100%;
+}
+#magazine .columns {
+	column-count: 4;
+	column-width: auto;
+	column-gap: 2%;
+}
+#magazine .logo {
+	width: 20%;
+	margin-right: 10%;
+	background-color: YellowGreen;
+}
+#magazine .nav {
+	width: 70%;
+	column-count: 5;
+	column-gap: 1%;
+	column-width: auto;
+}
+#magazine .left {
+	width: 15%;
+	margin-right: 3%;
+}
+#container {
+	width: 82%;
+}
+#magazine .threeFourth {
+	display: flex;
+}
+#magazine .threeFourth section {
+	width: 74.5%;
+	margin-right: 2.5%;
+}
+#magazine .threeFourth aside {
+	width: 23%;
 }
