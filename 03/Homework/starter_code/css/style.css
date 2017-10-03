@@ -51,8 +51,9 @@ body {
      font-weight: 300;
      line-height: 1.4;
      font-family: 'Open Sans', sans-serif;
-     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+    /*  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157); */
+
+    /*  background-size: cover; */
 }
 
 
@@ -63,39 +64,51 @@ body {
 /* Center the container */
 #container {
   width: 100%;
-  margin: auto;
+  height: auto; 
+  margin-top: -40px;
 }
 #quote {
-  background-image: url ("images/testimonial_bg.jpg");
   color: #fff;
   font-size: 18px;
   font-style: italic;
   text-align: center;
-  height: auto;
+  line-height: 28px;
+  margin: 0px;
+  height: 400px;
+  width: 100%;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: contain;
+  background-position: absolute;
 }
 #benefits {
   background-color: #fff;
   padding: 40px 0px 40px 40px;
-  height: auto;
-}
-.foot_logo {
-  color: #f9e42e;
-  text-align: center;
+  width: 100%;
+  height: 300px;
+  padding-left: 60px;
+  padding-right: 50%;
 }
 header {
-  background-image: url ("images/header_bg.jpg");
   text-align: center;
-  min-height: 60%;
+  width: 100%;
+  height: 600px;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: contain;
+  background-position: absolute;
 }
-
 footer {
-  text-align: auto;
+  text-align: center;
   font-size: 9px;
   font-weight: 600;
   color: #fff;
   background-color: #121212;
+  padding: 20px 0px;
 }
-
+footer .foot_logo {
+  color: #f9e42e;
+  text-align: center;
+  margin: 30px 0px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -106,6 +119,7 @@ h1{
   color: white;
   text-align: left;
   margin: 40px 0px 40px 60px;
+  padding-top: 20px;
 }
 h2 {
   font-size: 24px;
@@ -134,19 +148,37 @@ button {
   background-color: #f9e42e;
   height: 40px;
   height: auto;
-  min-height: 60px;
+  max-height: 100px;
+  position: relative;
+  top: 30px;
 }
 .button2 {
     background-color: #033048;
     color: #fff;
+    margin: 20px 0px;
 }
-div {
-    display: block;
-    max-width: 100%;
-}
-.author {
+#quote .author {
   font-weight: 600;
+  font-style: normal;
 }
 #quote p {
-  margin: 20px 100px 20px 100px;
+  margin: 60px 200px;
+}
+#benefits p {
+  margin-top: 10px;
+}
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 20px;
+  margin-left: 40px;
+  line-height: 24px;
+}
+.foot-image {
+  margin-top: 10px;
+}
+footer .social {
+  width: auto;
+  height: auto;
+  margin: 0px 10px 30px 10px;
 }
