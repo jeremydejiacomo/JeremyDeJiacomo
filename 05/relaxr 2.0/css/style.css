@@ -98,7 +98,6 @@ a:hover {
 /* Center the container */
 #container {
   width: 960px;
-  margin: auto;
   align-content: center;
   /* margin-top: -40px; */
 }
@@ -159,13 +158,11 @@ button {
 }
 .inline-block-one {
   display: inline-block;
-  vertical-align: top;
   width: 700px;
   margin-top: 20px 10px;
 }
 .inline-block-two {
   display: inline-block;
-  vertical-align: top;
   width: 240px;
   margin: 20px 10px;
 }
