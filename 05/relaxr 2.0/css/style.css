@@ -70,6 +70,7 @@ h2 {
 h3 {
   font-size: 40px;
   font-weight: 600;
+  line-height: 42px;
 }
 p {
   color: #606161;
@@ -160,12 +161,14 @@ button {
   display: inline-block;
   vertical-align: top;
   width: 700px;
+  margin-top: 20px 10px;
 }
 .inline-block-two {
   display: inline-block;
   vertical-align: top;
   width: 240px;
-  margin-left: 20px;
+  margin: 20px 10px;
 }
-
-
+img {
+  margin: 20px 0px;
+}
