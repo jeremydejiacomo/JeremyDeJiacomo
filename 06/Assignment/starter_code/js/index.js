@@ -7,7 +7,7 @@ var hideElement = document.getElementsByClassName('hide');
 var linkElement = document.getElementsByTagName('a');
 var pElement = document.getElementsByTagName('p');
 var showMoreElement = document.getElementById('show-this-on-click');
-var status = "less";
+var status = "Read more";
 
 
 /* execute */
@@ -17,7 +17,7 @@ console.dir(showMoreElement);
 console.dir(pElement);
 console.log(linkElement);
 
-readMoreElement[0].onclick = toggleMore;
+readMoreElement.onclick = toggleMore;
 
 
 /* functions */
@@ -25,11 +25,12 @@ readMoreElement[0].onclick = toggleMore;
 	readMoreElement = readLessElement;
 }; */
 function toggleMore() {
-    if (status == "less") {
+    if (status == "Read more") {
             readMoreElement = readLessElement;
             pElement[0] = pElement[0] + showMoreElement;
         } 
-    else if (status == "more") {
+    else if (status == "Read less") {
             readLessElement = readMoreElement;
+            pElement[0] = pElement[0];
         }
     };
