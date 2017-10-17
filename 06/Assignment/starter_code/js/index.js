@@ -17,6 +17,8 @@ console.dir(readMoreElement);
 console.dir(readLessElement);
 console.dir(showMoreElement);
 console.dir(pElement);
+console.dir(learnMoreTextElement);
+console.dir(hideElement);
 console.log(linkElement);
 
 /* readMoreElement = toggleMore; */
@@ -47,21 +49,20 @@ learnMoreElement[0].onclick = learnLess;
 function showMore () {
 	readMoreElement[0].style.display = "none";
 	readLessElement[0].style.display = "block";
-	showMoreElement[0].display = "inline";
+	showMoreElement.style.display = "block";
+	event.preventDefault()
 };
 
 function showLess () {
 	readLessElement[0].style.display = "none";
 	readMoreElement[0].style.display = "block";
-	showMoreElement[0].display = "none";
+	showMoreElement.style.display = "none";
 };
 /* functions for learn more/less */
 function learnMore () {
-	learnMoreElement[0].innerHTML = "Show Less";
-	learnMoreTextElement[0].style.display = "inline";
+	learnMoreTextElement.style.display = "block";
 };
 
 function learnLess () {
-	learnMoreElement[0].innerHTML = "Learn More";
-	learnMoreTextElement[0].innerHTML = "none";
+	learnMoreTextElement.style.display = "none";
 };
