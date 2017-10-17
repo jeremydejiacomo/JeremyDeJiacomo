@@ -19,14 +19,21 @@ console.dir(showMoreElement);
 console.dir(pElement);
 console.dir(learnMoreTextElement);
 console.dir(hideElement);
+console.dir(learnMoreElement);
 console.log(linkElement);
 
 /* readMoreElement = toggleMore; */
 readMoreElement[0].onclick = showMore;
 readLessElement[0].onclick = showLess;
 
-learnMoreElement[0].onclick = learnMore;
+
 /* learnMoreElement[0].onclick = learnLess; */
+
+/* for loop to prevent default on link elements */
+for (var i=0; i<linkElement.length; i++) {
+	linkElement[i].onclick = function(event){
+	event.preventDefault() };
+};
 
 /* functions */
 /* function showMore() {
@@ -50,18 +57,18 @@ function showMore () {
 	readMoreElement[0].style.display = "none";
 	readLessElement[0].style.display = "block";
 	showMoreElement.style.display = "block";
-	event.preventDefault();
 };
 
 function showLess () {
 	readLessElement[0].style.display = "none";
 	readMoreElement[0].style.display = "block";
 	showMoreElement.style.display = "none";
-	event.preventDefault();
 };
-/* functions for learn more/less */
+
+learnMoreElement[0].onclick = learnMore;
+/* function for learn more/less */
 function learnMore () {
-	linkElement[14].style.display = "none";
+	learnMoreElement[0].style.display = "none";
 	learnMoreTextElement.style.display = "block";
 	event.preventDefault();
 };
