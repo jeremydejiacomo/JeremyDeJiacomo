@@ -26,7 +26,7 @@ readMoreElement[0].onclick = showMore;
 readLessElement[0].onclick = showLess;
 
 learnMoreElement[0].onclick = learnMore;
-learnMoreElement[0].onclick = learnLess;
+/* learnMoreElement[0].onclick = learnLess; */
 
 /* functions */
 /* function showMore() {
@@ -50,19 +50,22 @@ function showMore () {
 	readMoreElement[0].style.display = "none";
 	readLessElement[0].style.display = "block";
 	showMoreElement.style.display = "block";
-	event.preventDefault()
+	event.preventDefault();
 };
 
 function showLess () {
 	readLessElement[0].style.display = "none";
 	readMoreElement[0].style.display = "block";
 	showMoreElement.style.display = "none";
+	event.preventDefault();
 };
 /* functions for learn more/less */
 function learnMore () {
+	linkElement[14].style.display = "none";
 	learnMoreTextElement.style.display = "block";
+	event.preventDefault();
 };
 
-function learnLess () {
+/* function learnLess () {
 	learnMoreTextElement.style.display = "none";
-};
+}; */
