@@ -13,14 +13,14 @@ var learnMoreElement = document.getElementsByClassName('learnmore');
 
 
 /* execute */
-console.dir(readMoreElement);
+/* console.dir(readMoreElement);
 console.dir(readLessElement);
 console.dir(showMoreElement);
 console.dir(pElement);
 console.dir(learnMoreTextElement);
 console.dir(hideElement);
 console.dir(learnMoreElement);
-console.log(linkElement);
+console.log(linkElement); */
 
 /* readMoreElement = toggleMore; */
 readMoreElement[0].onclick = showMore;
