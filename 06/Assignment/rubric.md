@@ -10,7 +10,7 @@ The team from Relaxr is back...again! They want their page to be more interactiv
 
 Student: Jeremy DeJiacomo
 
-Project URL: https://github.com/jeremydejiacomo/jeffreywisard/08/Assignment
+Project URL: https://github.com/jeremydejiacomo/JeremyDeJiacomo/06/Assignment/starter_code
 
 |                                                                                                                                                                                                                     |                                |                        |                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------------------|--------------------------|
