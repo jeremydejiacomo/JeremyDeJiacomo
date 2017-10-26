@@ -17,7 +17,7 @@ Project URL: https://github.com/jeremydejiacomo/JeremyDeJiacomo/06/Assignment/st
 | Technical Requirements                                                                                                                                                                                              | Does Not Meet Expectations (0) | Meets Expectations (1) | Exceeds Expectations (2) |
 | Included the the external JS Script Tag |      |      |    X  |
 | Select the appropriate DOM elements with CSS selectors |      |      |  X    |
-| Applied event handler to DOM elements|   X   |      |      |
+| Applied event handler to DOM elements|     |      |   X   |
 | **BONUS**: Submitted working code  |  X    |      |      |
-| **BONUS**: Prevent a form submission with the ```event.preventDefault()``` function  |   X   |      |      |
-| TOTAL: ___4___/6   |      |      |      |
+| **BONUS**: Prevent a form submission with the ```event.preventDefault()``` function  |      |   X   |      |
+| TOTAL: ___7___/6   |      |      |      |
