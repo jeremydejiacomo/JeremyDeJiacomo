@@ -8,14 +8,15 @@ var city = [
 ];
 
 var image = [
-	"austin.jpg", 
-	"nyc.jpg", 
-	"la.jpg", 
-	"sf.jpg", 
-	"sydney.jpg",
+	"images/austin.jpg", 
+	"images/nyc.jpg", 
+	"images/la.jpg", 
+	"images/sf.jpg", 
+	"images/sydney.jpg",
 ];
 
 var option = '';
+
 /* statements */
 	/* pseudo-code:
 	when user selects dropdown option run:
@@ -26,9 +27,37 @@ var option = '';
 		else if SYD display sydney,jpg
 			*/
 
-/* functions */
+$(document).ready(function() {
 
-for (var i=0;i<city.length;i++){
-   option += '<option value="'+ city[i] + '">' + city[i] + '</option>';
-};
-$('#city-type').append(option);
+	for (var i=0;i<city.length;i++){
+	   option += '<option value="'+ city[i] + '">' + city[i] + '</option>';
+	};
+	$('#city-type').append(option);
+
+	$('select').change(function() {
+        var option = $('#city-type option:selected').val();
+
+        if(option === 'NYC') {
+        	$('body').css('background', 'url("images/nyc.jpg")');
+        };
+
+        if(option === 'SF') {
+        	$('body').css('background', 'url("images/sf.jpg")');
+        };
+
+        if(option === 'LA') {
+        	$('body').css('background', 'url("images/la.jpg")');
+        };
+
+        if(option === 'ATX') {
+        	$('body').css('background', 'url("images/austin.jpg")');
+        };
+
+        if(option === 'SYD') {
+        	$('body').css('background', 'url("images/sydney.jpg")');
+        };
+
+       event.preventDefault();
+	});
+});
+
