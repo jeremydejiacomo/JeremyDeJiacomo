@@ -1,0 +1,82 @@
+/*#1: Remove inline*/
+
+/*#2: Combine multiples*/
+#buttons-wrapper{
+     background:orange;
+}
+#buttons-wrapper, #buttons-wrapper>form{
+     padding:10px;
+     border:1px solid black;
+}
+
+/*#3: Rename classes/ids for readability*/
+#imageVoter{
+     margin-top: 50px;
+     width: 150px;
+}
+/*#4: Where else could your classes/ids for readability*/
+
+/*#5: Organize CSS - general to specific*/
+.groceryList{
+     width:200px;
+}
+#container>.col{
+     width:50%;
+}
+footer{
+     text-align: right;
+}
+a:hover{
+     color:purple;
+}
+header>ol{
+     list-style: none;
+}
+body{
+     background-image:url('http://www.designbolts.com/wp-content/uploads/2012/11/3px-tile-tiny-dark-square-tiles-seamless-pattern.jpg');
+}
+#navigation-wrapper{
+     float:left;
+}
+a{
+     color:red;
+}
+header{
+     height:80px;
+}
+#container>img{
+     border:1px solid red;
+}
+footer>#company-name{
+     font-weight: bold;
+}
+
+#container {
+  padding: 20px;
+  margin: auto;
+}
+
+#main {
+  padding: 20px;
+  margin: auto;
+}
+
+#container, #main {
+    "width": "960px",
+    "background": "grey",
+    "color": "#fff",
+    "font-size": "14px"
+    "font-size": "14px"
+    "box-shadow": "0 0 10px #ccc",
+}
+
+/*#6: Create classes for large css changes*/
+
+
+/*#7: Remove unnecessary CSS */
+#myDiv{
+     margin:10px 0px 0px 20px;
+}
+div.something{
+     width:100%;
+}
