@@ -15,6 +15,7 @@ var image = [
 	"sydney.jpg",
 ];
 
+var option = '';
 /* statements */
 	/* pseudo-code:
 	when user selects dropdown option run:
@@ -26,3 +27,8 @@ var image = [
 			*/
 
 /* functions */
+
+for (var i=0;i<city.length;i++){
+   option += '<option value="'+ city[i] + '">' + city[i] + '</option>';
+};
+$('#city-type').append(option);
