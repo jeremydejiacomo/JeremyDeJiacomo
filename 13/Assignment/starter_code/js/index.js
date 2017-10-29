@@ -1,3 +1,4 @@
+/* variables */
 var city = [
 	"NYC", 
 	"SF", 
@@ -13,3 +14,15 @@ var image = [
 	"sf.jpg", 
 	"sydney.jpg",
 ];
+
+/* statements */
+	/* pseudo-code:
+	when user selects dropdown option run:
+		if NYC display nyc.jpg
+		else if SF display sf.jpg
+		else if LA display la.jpg
+		else if ATX display austin.jpg
+		else if SYD display sydney,jpg
+			*/
+
+/* functions */
