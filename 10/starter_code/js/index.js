@@ -25,7 +25,7 @@ input text is the target text field, input submit is the button, and div contain
 		if else (etc...)
 		(at end pass prevent.default) */
 
-/* my attempt */
+/* my last attempt */
 /* $(document).ready( {
 	$('#submit-btn').on("click", () {
 		event.preventDefault();
@@ -37,7 +37,7 @@ input text is the target text field, input submit is the button, and div contain
 	console.log(cityType);
 });)}; */
 
-/* in-class attempt */
+/* third attempt */
    $(document).ready(function() {
       $('form').submit(function(event) {
         var inputField = $('input').val();
