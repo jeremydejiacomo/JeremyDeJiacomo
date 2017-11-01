@@ -32,6 +32,12 @@ $(document).ready(function() {
 	for (var i=0;i<city.length;i++){
 	   option += '<option value="'+ city[i] + '">' + city[i] + '</option>';
 	};
+
+	/* jquery for loop: (reviewed in class)
+	$(cities).each(function(i, city) {
+		$('#city-type').append('<option value="'+city+'">'+city+'</option>');
+	}); */
+
 	$('#city-type').append(option);
 
 	$('select').change(function() {

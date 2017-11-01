@@ -1,0 +1,65 @@
+header, footer {
+	border: 2px solid black;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+header {
+	height: 70px;
+	overflow: hidden;
+}
+
+nav {
+	 float: left;
+	 width: 50%;
+}
+
+li {
+	height: 40px;
+	min-width: 100px;
+	display: inline-block;
+	border: 3px solid black;
+}
+
+section {
+	height: 250px;
+	border: 3px solid black;
+	margin-bottom: 10px;
+}
+
+div {
+
+}
+
+footer {
+	height: 150px;
+	margin-bottom: auto;
+}
+
+.container {
+	max-width: 100%;
+	margin: auto;
+}
+
+.boxes {
+	border: 1px solid black;
+	min-height: 200px;
+	display: inline-block;
+	width: 24%;
+	margin-bottom: 10px;
+}
+
+.hamMenu {
+	float: right;
+	width: 50px;
+	border: 1px solid black;
+	padding: 5px;
+	display: none;
+}
+
+.footerboxes {
+	border: 1px solid black;
+	min-height: 100px;
+	display: inline-block;
+	width: 32%;
+}
