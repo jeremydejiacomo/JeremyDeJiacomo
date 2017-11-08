@@ -4,7 +4,7 @@
 }
 
 #content {
-	
+	margin: 0em 2em;
 }
 
 /* tags */
@@ -62,17 +62,21 @@ footer {
 
 .card {
 	border: 1px solid black;
+	border-radius: 4px;
 	display: inline-block;
 	min-height: 25em;
 	padding: 10px 10px;
 	box-sizing: border-box;
+	margin: 2em 1em;
 }
 
 .hero {
 	border: 1px solid black;
+	border-radius: 4px;
 	text-align: center;
-	min-height: 15em;
+	min-height: 30em;
 	background-color: silver;
+	margin: 2em 1em;
 }
 
 .pure-button {
@@ -87,6 +91,7 @@ footer {
 
 .copy {
 	min-height: 5em;
+	margin: 1em 2em;
 }
 
 .image {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Application Form</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div id="container">
+		<div>
+			<h1>Choose application</h1>
+		</div>
+
+		<div>
+			<div>
+			<h2>Your Contact Info</h2>
+			<form action="#" method="POST">
+				<div>
+					<label for="name">Your Name</label>
+					<input type="text" name="name" id="name" placeholder="John">
+					<input type="text" name="name" id="name" placeholder="Doe">
+				</div>
+
+				<div>
+					<label for="phone">Phone Number</label>
+					<input type="phone" name="phone" id="phone" maxlength="3">-<input type="phone" name="phone" id="phone" maxlength="3">-<input type="phone" name="phone" id="phone" maxlength="4">
+				</div>
+
+				<div>
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="Street Address">
+					<input type="text" name="address" id="address" placeholder="Street Address 2">
+					<input type="text" name="address" id="address" placeholder="City">
+					<input type="text" name="address" id="address" placeholder="State">
+					<input type="text" name="address" id="address" placeholder="Postal Code">
+				</div>
+
+				<h2>Skills and Interests</h2>
+				<div>
+					<label for="course">Course</label>
+					<select type="select" name="course" id="course" value="course">
+						<option>Select Course</option>
+						<option>Awesome Course</option>
+						<option>Random Course</option>
+						<option>Boring Course</option>
+						<option>Crazy Course</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="experience">Past Experience</label>
+					<input type="text" name="experience" id="experience" placeholder="Your experience here">
+				</div>
+
+				<h2>Anything Else?</h2>
+				<div>
+					<label for="referral">Referral</label>
+					<select type="select" name="referral" id="referral" value="referral">
+						<option>Yes</option>
+						<option>No</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="comments">Comments</label>
+					<input type="text" name="comments" id="comments" placeholder="Your comments here">
+				</div>
+				
+			</form>
+
+			<input class="submit" type="submit" value="Save Draft">
+			<input class="submit" type="submit" value="Submit">
+
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
