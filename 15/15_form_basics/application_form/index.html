@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="container">
-		<div>
+		<div class="headerOne">
 			<h1>Choose application</h1>
 		</div>
 
@@ -41,11 +41,15 @@
 				<div>
 					<label for="course">Course</label>
 					<select type="select" name="course" id="course" value="course">
-						<option>Select Course</option>
-						<option>Awesome Course</option>
-						<option>Random Course</option>
-						<option>Boring Course</option>
-						<option>Crazy Course</option>
+						<option>Select One</option>
+						<optgroup label="Web Development">
+						    <option value="frontend">Front-End</option>
+						    <option value="backend">Back-End</option>
+					    </optgroup>
+					    <optgroup label="Design">
+						    <option value="visual">Visual Design</option>
+						    <option value="ux">User Experience Design</option>
+					    </optgroup>
 					</select>
 				</div>
 
@@ -58,8 +62,10 @@
 				<div>
 					<label for="referral">Referral</label>
 					<select type="select" name="referral" id="referral" value="referral">
-						<option>Yes</option>
-						<option>No</option>
+						<option>None</option>
+						<option>Friend</option>
+						<option>Instructor</option>
+						<option>Online</option>
 					</select>
 				</div>
 
