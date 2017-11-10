@@ -7,9 +7,27 @@
   </head>
   <body>
     <div id="app">
-      <header></header>
+      <header>
+        
+        <form action="#" id="addToDoList">
+          <input type="text" id="addToDoItem" placeholder="Add Item">
+          <input type="submit" value="Add to List">
+          
+        </form>
+
+      </header>
       <ul id="todos"></ul>
-      <footer></footer>
+      <footer>
+        <div class="status">
+          <p>You have <span id="count">0</span> todos left.</p>
+        </div>
+        <button id="clearList">Clear</button>
+        <button id="clearCompletedList">Clear Completed</button>
+      </footer>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>    
+
   </body>
 </html>
