@@ -37,3 +37,13 @@
       
       window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
       })(this, this.document);
+
+
+//hover//
+$(document).ready(function() {
+	$('.control').click(function() {
+   		var randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    	$('.background').css('background-color', randomColor);
+    });
+});
+
