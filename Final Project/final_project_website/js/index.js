@@ -39,11 +39,16 @@
       })(this, this.document);
 
 
-//hover//
+//random color button//
 $(document).ready(function() {
 	$('.control').click(function() {
    		var randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    	$('.background').css('background-color', randomColor);
+    	$('.image').css('background-color', randomColor);
+    });
+
+    $('.two').click(function() {
+   		var randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    	$('.hero').css('background-color', randomColor);
     });
 });
 
