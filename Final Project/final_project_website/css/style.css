@@ -327,17 +327,17 @@ button:hover {
           }
 		
 		/* changes to hero card for mobile */
-          .hero:focus {
+          .hero:active {
 			  box-shadow: 0px 4px 10px 4px #e6e6e6;
 			  transition: all 0.3s ease-in-out;
 			  transform: scale(1.01, 1.01);
 			}
 
-			.hero:focus .heroText {
+			.hero:active .heroText {
 				opacity: 1;
 			}
 
-			.hero:focus::after {
+			.hero:active::after {
 			    opacity: 1;
 			}
 			      
