@@ -29,7 +29,7 @@ li {
 	display: inline;
 }
 
-body {
+h1, h2, h3, p {
 	font-family: Roboto;
 }
 
@@ -142,7 +142,7 @@ button:hover {
 	border-radius: 8px;
 	display: inline-block;
 	min-height: 25em;
-	padding: 1em 1em;
+	padding: 1.3em 1.3em;
 	box-sizing: border-box;
 	margin: 2em 1em;
 	box-shadow: 0px 2px 4px 2px #f2f2f2;
@@ -230,7 +230,7 @@ button:hover {
 }
 
 
-/* menu css */
+/* responsive menu css */
       .custom-wrapper {
           background-color: #0039e6;
           margin-bottom: 0;
@@ -311,6 +311,7 @@ button:hover {
 
       .pure-menu-link {
 		font-weight: 400;
+		font-family: Roboto;
 		font-size: 1em;
 		color: #fff;
 		}
@@ -327,24 +328,25 @@ button:hover {
           }
 		
 		/* changes to hero card for mobile */
-          .hero:active {
+          .hero:active, .hero:focus {
 			  box-shadow: 0px 4px 10px 4px #e6e6e6;
 			  transition: all 0.3s ease-in-out;
 			  transform: scale(1.01, 1.01);
 			}
 
-			.hero:active .heroText {
+			.hero:active .heroText, .hero:focus .heroText {
 				opacity: 1;
 			}
 
-			.hero:active::after {
+			.hero:active::after, .hero:focus::after {
 			    opacity: 1;
 			}
 			      
       }
 
+/* changes to elements on small/phone breakpoints */
       @media (max-width: 35.5em) {
-      	/* changes to elements on small/phone breakpoints */
+      	
 			h1 {
 				font-size: 1.5em;
 				line-height: 1.5em;
@@ -352,5 +354,9 @@ button:hover {
 			.hero {
 				background-repeat: repeat-y;
 				min-height: 8em;
+			}
+
+			.theCause, .initiatives, .mantra {
+				background-repeat: no-repeat;
 			}
       }
