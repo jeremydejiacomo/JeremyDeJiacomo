@@ -115,15 +115,8 @@ button:hover {
 	color: #fff;
 }
 
-.pure-button {
-	margin-bottom: 1em;
-}
-
-.pure-button-primary {
-	position: relative;
-    bottom: -1em;
-    vertical-align: center;
-    background-color: #1a53ff;
+.floatRight {
+	float: right;
 }
 
 .copy {
@@ -155,8 +148,6 @@ button:hover {
 	display: block;
 	margin: auto;
 	padding: 8em 2em;
-	transition: .5s ease;
-	opacity: 0;
 }
 
 .hero {
@@ -172,48 +163,38 @@ button:hover {
 	margin: 2em 1em;
 	padding: 0em 3em;
 	box-shadow: 0px 2px 4px 2px #f2f2f2;
-	transition: all 0.3s ease-in-out;
-}
-
-/* card hover effects */
-.card:hover {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: all 0.3s ease-in-out;
-	  transform: scale(1.02, 1.02);
-}
-
-.card:after {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: opacity 0.3s ease-in-out;
-}
-
-.card:hover::after {
-    opacity: 1;
-}
-
-.hero:hover {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: all 0.3s ease-in-out;
-	  transform: scale(1.01, 1.01);
-}
-
-.hero:hover .heroText {
-	opacity: 1;
-}
-
-.hero:after {
-	  box-shadow: 0px 4px 10px 4px #e6e6e6;
-	  transition: opacity 0.3s ease-in-out;
-}
-
-.hero:hover::after {
-    opacity: 1;
 }
 
 .heroTitle {
 	text-align: center;
 	position: relative;
 	top: 5em;
+}
+
+/* pure-css class changes */
+.pure-button {
+	margin-bottom: 1em;
+}
+
+.pure-button-primary {
+	position: relative;
+    margin-top: 1em;
+    vertical-align: center;
+    background-color: #1a53ff;
+}
+
+.pure-button-disabled {
+    border: 1px solid #d9d9d9;
+    margin-top: .75em;
+}
+
+.pure-form {
+	margin: 1em 2em;
+}
+
+.pure-form input {
+	margin-top: .75em;
+	margin-right:  .75em;
 }
 
 /* class additions for section pages */
@@ -317,6 +298,53 @@ button:hover {
 		}
 
 /* media queries */
+	/* large viewports */
+	@media (min-width: 64em) {
+		/* card hover effects */
+		.card:hover, .card:active, .card:focus {
+			  box-shadow: 0px 4px 10px 4px #e6e6e6;
+			  transition: all 0.3s ease-in-out;
+			  transform: scale(1.02, 1.02);
+		}
+
+		.card:after {
+			  box-shadow: 0px 4px 10px 4px #e6e6e6;
+			  transition: opacity 0.3s ease-in-out;
+		}
+
+		.card:hover::after, .card:focus::after, .card:active::after {
+		    opacity: 1;
+		}
+
+		.heroText {
+			transition: .5s ease;
+			opacity: 0;
+		}
+
+		.hero {
+			transition: all 0.3s ease-in-out;
+		}
+
+		.hero:hover, .hero:active, .hero:focus {
+			  box-shadow: 0px 4px 10px 4px #e6e6e6;
+			  transition: all 0.3s ease-in-out;
+			  transform: scale(1.01, 1.01);
+		}
+
+		.hero:hover .heroText, .hero:active .heroText, .hero:focus .heroText {
+			opacity: 1;
+		}
+
+		.hero:after {
+			  box-shadow: 0px 4px 10px 4px #e6e6e6;
+			  transition: opacity 0.3s ease-in-out;
+		}
+
+		.hero:hover::after, .hero:active::after, .hero:focus::after {
+		    opacity: 1;
+		}
+	}
+
       @media (max-width: 47.999em) {
 		/* changes to nav menu element for mobile */
           .custom-menu-3 {
@@ -326,21 +354,6 @@ button:hover {
           .custom-toggle {
               display: block;
           }
-		
-		/* changes to hero card for mobile */
-          .hero:active, .hero:focus {
-			  box-shadow: 0px 4px 10px 4px #e6e6e6;
-			  transition: all 0.3s ease-in-out;
-			  transform: scale(1.01, 1.01);
-			}
-
-			.hero:active .heroText, .hero:focus .heroText {
-				opacity: 1;
-			}
-
-			.hero:active::after, .hero:focus::after {
-			    opacity: 1;
-			}
 			      
       }
 
